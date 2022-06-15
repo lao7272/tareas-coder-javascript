@@ -18,3 +18,4 @@ if(siEsPrimo){
     console.log('No es un numero primo')
 }
 
+l
