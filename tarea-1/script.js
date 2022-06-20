@@ -17,5 +17,3 @@ if(siEsPrimo){
 } else {
     console.log('No es un numero primo')
 }
-
-l
