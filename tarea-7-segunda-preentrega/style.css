@@ -1,7 +1,4 @@
-.ocultarP{
-    display: none;
-    margin: 20px 0;
-}
+
 .mostrarP{
     margin: 20px 0;
 }
@@ -10,6 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
 }
 .cajaPersonaje h3{
     margin: 0;

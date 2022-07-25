@@ -50,6 +50,19 @@ mostrarP.addEventListener('click', ()=>{
     });
     arrayPersonajes.forEach((personaje, i) => {
         document.getElementById(`personaje${i}`).firstElementChild.lastElementChild.addEventListener('click', ()=>{
+            Toastify({
+                        text: `${personaje.nombre} eliminado`,
+                        duration: 1500,
+                        close: true,
+                        gravity: "top", // `top` or `bottom`
+                        position: "right", // `left`, `center` or `right`
+                        stopOnFocus: true, // Prevents dismissing of toast on hover
+                        style: {
+                            background: "linear-gradient(90deg, #242424, #989898)",
+                            color: "#fff"
+                        },
+                        onClick: function(){} // Callback after click
+                    }).showToast();
             localStorage.setItem('personajes', JSON.stringify(personajes));
             document.getElementById(`personaje${i}`).remove();
             personajes.splice(i, 1);
