@@ -24,18 +24,23 @@
                 <input type="text" class="form-control" id="idName" name="nombre">
             </div>
             <div class="mb-3">
-                <label for="edad" class="form-label">Edad</label>
-                <input type="number" class="form-control" id="edad" name="edad">
-            </div>
-            <div class="mb-3">
                 <label for="poder" class="form-label">Escribe un poder para tu personaje</label>
                 <input type="text" class="form-control" id="poder" name="poder">
+            </div>
+            <div class="mb-3">
+                <label for="imagen" class="form-label">Imagen usando la url</label>
+                <input type="text" class="form-control" id="imagen" name="imagen">
             </div>
             <button type="submit" class="btn btn-dark">Enviar</button>
         </form>
         <button class="btn btn-outline-info mostrarP" id="mostrarP">Mostrar Personajes</button>
         <div class="container row" id="cajaPersonajes"></div>
+
+        <!-- USO DE FETCH -->
+        <button class="btn btn-outline-info mostrarP" id="mostrarOtrosPersonajes">Mostrar Personajes Hechos por Otros Usuarios</button>
+        <div class="container row" id="cajaFetchPersonajes"></div>
     </main>
+    
     <!-- TOASTIFY -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <!-- SCRIPT -->
